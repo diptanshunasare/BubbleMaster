@@ -1,0 +1,129 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1F2833;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#header {
+    color: #66FCF1;
+    font-size: 3em;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    animation: bounce 1s infinite alternate;
+    padding-left: 5%;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-20px);
+    }
+}
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: #1B2837;
+}
+#pannel{
+    overflow: hidden;
+    width: 80%;
+    height: 80%;
+    background-color: #456d99;
+    border-radius: 15px;
+}
+#ptop{
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background-color: #314b68;
+    display:flex;
+    padding: 0px 30%;
+    color: #fff;
+}
+.elem{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.box{
+    padding: 10px 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    color: rgb(0, 76, 117);
+    font-weight: 600;
+    font-size: 25px;
+}
+#pbtm{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: calc(100% - 100px);
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+}
+.bubble{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-weight: 500;
+    font-size: larger;
+    color: rgb(14, 84, 109);
+}
+.bubble:hover{
+    background-color:rgb(0, 199, 199) ;
+    cursor: pointer;
+}
+
+  #startButton {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #2ecc71;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  #startButton:hover {
+    background-color: #3498db;
+  }
+  
+  #scoreDisplay {
+    font-size: 36px;
+    color: #fff;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
